@@ -124,9 +124,22 @@
   background-image: url("../assets/images/body2_2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: 150%; */
   width: 30%;
   border-radius: 20px 0 0 20px;
+}
+.bodySection2_2:hover {
+  animation-duration: 1s;
+  animation-name: zoomin;
+  animation-fill-mode : forwards;
+}
+@keyframes zoomin {
+  from {
+    background-size: 150%;
+  }
+  to {
+    background-size: 180%;
+  }
 }
 .bodySection2_2Content {
   width: 70%;
@@ -243,8 +256,9 @@
 }
 
 .footerSection > section > div {
-  width: 40%;
+  width: 50%;
 }
 .footerSection > section > section {
-  width: 60%;
+  width: 50%;
+  /* color: #1b2d37; */
 }
